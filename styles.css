@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&display=swap');
+
+:root {
+    --color-yellow: #FFB84C;
+    --color-pink: #F266AB;
+    --color-purple: #A459D1;
+    --color-cyan: #2CD3E1;
+    --color-grey: #F8F6F4;
+    --color-background: #10002b;
+    --font-logo: 'Great Vibes', cursive;
+    --font-main: 'Poiret One', cursive;
+
+}
+
+
+* {
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#00000044, #00000044), url(/images/bkg-lake.jpg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 60%;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.form-container .image-side, .form-container .form-side {
+    width: 50%;
+    height: 100%;
+}
+
+.form-container .image-side {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(#00000011, #00000099), url(/images/bkg-lake.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-container .image-side p:first-child {
+    font-family: var(--font-logo);
+    font-size: 4rem;
+}
+
+.form-container .image-side p:nth-child(2),
+.form-container .image-side p:nth-child(3) {
+    font-family: var(--font-main);
+    padding: 0 10px;
+}
+
+.form-container .image-side button {
+    width: 100px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: #00000011;
+    color: white;
+    font-family: var(--font-main);
+    border-radius: 3px;
+    font-size: 1.1rem;
+}
+
+.form-container .form-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 10px;
+}
+
+form legend {
+    color: #2CD3E1;
+    font-family:var(--font-main);
+    font-size: 1.5rem;
+    text-align:center;
+    margin-bottom: 25px;
+}
+
+.form-container .form-side .form .names {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+
+label {
+    font-family: var(--font-main);
+    text-align:left;
+}
+label:first-child, label:nth-child(2) {
+    line-height: 2;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid var(--color-cyan);
+    border-radius: 3px;
+    padding-left: 3px;
+}
+
+input:focus {
+    border: 1px solid #2CD3E144;
+    background-color: #2CD3E144;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    outline: none;
+}
+
+.form button {
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    font-family: var(--font-main);
+    border-radius: 3px;
+    border: 1px solid var(--color-cyan);
+    background-color: var(--color-cyan);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 25px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   <div class="form-container">
+        <div class="image-side">
+            <p>Welcome! ⛰️</p>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You know you want to.</p>
+            <button>Sign in</button>
+        </div>
+        <div class="form-side">
+            <form action="#" method="post" class="form">
+                <legend>Let's do this!</legend>
+                <div class="names">
+                    <div class="first-name">
+                        <label for="first_name" aria-label="required">First name</label>                
+                        <input type="text" id="first_name" name="user_first_name" minlength="2" maxlength="15" required>
+                    </div>
+                    <div class="last-name">
+                        <label for="last_name" aria-label="required">Last name</label>
+                        <input type="text" id="last_name" name="user_last_name" minlength="3" maxlength="15" required>
+                    </div>
+                </div>
+                <label for="user_email" aria-label="required">Email</label>
+                <input type="email" id="user_email" name="user_email" required>
+                <label for="user_phone_number" aria-label="required">Phone number (optional)</label>
+                <input type="tel" id="user_phone_number" name="user_phone_number" >
+                <label for="user_password" aria-label="required">Password</label>
+                <input type="password" id="user_password" name="user_password" minlength="8" required>
+                <label for="confirm_password" aria-label="required">Confirm password</label>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+                <button>Sign up</button>
+            </form>
+        </div>
+   </div>
+</body>
+</html>

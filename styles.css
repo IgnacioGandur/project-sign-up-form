@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poiret+One&display=swap');
 
 :root {
-    --color-yellow: #FFB84C;
-    --color-pink: #F266AB;
-    --color-purple: #A459D1;
     --color-cyan: #2CD3E1;
-    --color-grey: #F8F6F4;
     --color-background: #10002b;
     --font-logo: 'Great Vibes', cursive;
     --font-main: 'Poiret One', cursive;
@@ -20,11 +16,12 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#00000044, #00000044), url(images/bkg-lake.jpg) no-repeat;
+    background: linear-gradient(#00000044, #00000044), url(images/bkg-lake.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +29,7 @@ body {
 }
 
 p {
-    color: white;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -76,12 +73,24 @@ p {
 .form-container .image-side button {
     width: 100px;
     height: 40px;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     background-color: #00000011;
-    color: white;
+    color: #ffffff;
     font-family: var(--font-main);
     border-radius: 3px;
     font-size: 1.1rem;
+    transition: all 85ms ease-out;
+}
+
+.form-container .image-side button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    scale: 1.1;
+    box-shadow: 0px 0px 5px 5px #ffffff;
+}
+
+.form-container .image-side button:active {
+    scale: 0.9;
 }
 
 .form-container .form-side {
@@ -101,7 +110,7 @@ p {
 }
 
 form legend {
-    color: #2CD3E1;
+    color: var(--color-cyan);
     font-family:var(--font-main);
     font-size: 1.5rem;
     text-align:center;
@@ -146,9 +155,38 @@ input:focus {
     font-family: var(--font-main);
     border-radius: 3px;
     border: 1px solid var(--color-cyan);
-    background-color: var(--color-cyan);
-    color: #ffffff;
+    background-color: #00000000;
+    color: var(--color-cyan);
     font-size: 1.1rem;
     font-weight: 600;
     margin-top: 25px;
+    transition: all 85ms ease-out;
+}
+
+.form button:hover {
+    scale: 1.1;
+    box-shadow: 0px 0px 5px 5px var(--color-cyan);
+    background-color: var(--color-cyan);
+    color: #ffffff;
+}
+
+.form button:active {
+    scale: 0.9;
+}
+
+.author {
+    position:relative;
+    top: 40px;
+    text-align:center;
+    font-family: var(--font-main);
+}
+
+.fa-github {
+    font-size: 2rem;
+    transition: all 450ms ease-out;
+}
+.fa-github:hover {
+    scale: 1.5;
+    rotate: 360deg;
+    translate: 10px 0;
 }

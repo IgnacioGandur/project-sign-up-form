@@ -24,7 +24,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#00000044, #00000044), url(/images/bkg-lake.jpg) no-repeat;
+    background: linear-gradient(#00000044, #00000044), url(images/bkg-lake.jpg) no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: linear-gradient(#00000011, #00000099), url(/images/bkg-lake.jpg);
+    background: linear-gradient(#00000011, #00000099), url(images/bkg-lake.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

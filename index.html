@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up form</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
    <div class="form-container">
@@ -34,9 +33,9 @@
                 <label for="user_phone_number" aria-label="required">Phone number (optional)</label>
                 <input type="tel" id="user_phone_number" name="user_phone_number" >
                 <label for="user_password" aria-label="required">Password</label>
-                <input type="password" id="user_password" name="user_password" minlength="8" required>
+                <input type="password" id="user_password" name="user_password" minlength="8" autocomplete="new-password" required>
                 <label for="confirm_password" aria-label="required">Confirm password</label>
-                <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="8" autocomplete="new-password" required>
                 <button>Sign up</button>
             </form>
         </div>

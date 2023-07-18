@@ -141,11 +141,17 @@ input {
     transition:all 150ms ease-in;
 }
 
+input:hover {
+    box-shadow: rgba(3, 207, 214, 0.3) 0px 0px 0px 3px;
+    scale:1.01;
+}
+
 input:focus {
     border: 1px solid #2CD3E144;
     background-color: #2CD3E144;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     outline: 2px solid #2cd3e144;
+    scale:1.02;
 }
 
 .form button {
